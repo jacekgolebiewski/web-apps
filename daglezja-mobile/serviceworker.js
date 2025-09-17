@@ -1,37 +1,33 @@
 const CACHE_NAME = "sw-cache-daglezja-mobile-v7";
 const PATHS_TO_CACHE = [
 
-  "/",
-  "index.html",
-  "/index.html",
+  "/web-apps/daglezja-mobile/",
+  "/web-apps/daglezja-mobile/index.html",
 
-  "app-daglezja-mobile-v1/app/index.html",
-  "/app-daglezja-mobile-v1/app/index.html",
+  "/web-apps/daglezja-mobile/serviceworker.js",
 
-  "serviceworker.js",
+  "/web-apps/daglezja-mobile/runtime.js",
+  "/web-apps/daglezja-mobile/polyfills.js",
+  "/web-apps/daglezja-mobile/main.js",
 
-  "runtime.js",
-  "polyfills.js",
-  "main.js",
+  "/web-apps/daglezja-mobile/styles.css",
+  "/web-apps/daglezja-mobile/manifest.json",
+  "/web-apps/daglezja-mobile/favicon.ico",
 
-  "styles.css",
-  "manifest.json",
-  "favicon.ico",
+  "/web-apps/daglezja-mobile/material-symbols-outlined-font.woff2",
 
-  "material-symbols-outlined-font.woff2",
+  "/web-apps/daglezja-mobile/assets/qr.png",
+  "/web-apps/daglezja-mobile/assets/confetti.js",
 
-  "assets/qr.png",
-  "assets/confetti.js",
-
-  "assets/icons/icon-48x48.png",
-  "assets/icons/icon-72x72.png",
-  "assets/icons/icon-96x96.png",
-  "assets/icons/icon-128x128.png",
-  "assets/icons/icon-144x144.png",
-  "assets/icons/icon-152x152.png",
-  "assets/icons/icon-192x192.png",
-  "assets/icons/icon-384x384.png",
-  "assets/icons/icon-512x512.png"
+  "/web-apps/daglezja-mobile/assets/icons/icon-48x48.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-72x72.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-96x96.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-128x128.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-144x144.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-152x152.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-192x192.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-384x384.png",
+  "/web-apps/daglezja-mobile/assets/icons/icon-512x512.png"
 ];
 
 
