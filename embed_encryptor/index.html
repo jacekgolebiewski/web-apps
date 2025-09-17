@@ -1,0 +1,54 @@
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>embed-encryptor</title>
+    <style>
+        #embed {
+            position: absolute;
+            left: 0;
+            top: calc(50vh - 150px);
+            height: 300px;
+        }
+        #embed, #content {
+            width: 100vw;
+        }
+        #password {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="embed">
+        Browser: <input type="button" value="Reload" onclick="location.reload()"/><br>
+        <div id="page">
+            Templates:
+            <input type="button" value="<img>" onclick="putTemplate('img')"/>
+            <input type="button" value="<video>" onclick="putTemplate('video')"/>
+            <input type="button" value="<iframe>" onclick="putTemplate('iframe')"/>
+            <br>
+            Content:<br>
+            <textarea id="content" rows="8"></textarea><br/>
+            Password: <input id="password" type="password"/><hr/>
+            Actions:
+            <input id="encrypt" type="button" value="Encrypt" onclick="generateConvert('encrypt')"/>
+            <input id="decrypt" type="button" value="Decrypt" onclick="generateConvert('decrypt')"/> |
+            <input id="edit" type="button" value="Edit" onclick="edit()"/> |
+            <input id="generateEmbed" type="button" value="Generate embed" onclick="generateEmbed()"/><br>
+            More:<br>
+            <input id="encryptUrlToFile" type="button" value="Encrypt url to file" onclick="encryptImgUrlToFile()"/> |
+            <input id="file-selector" type="file">
+            <script>
+                const fileSelector = document.getElementById('file-selector');
+                fileSelector.addEventListener('change', (event) => {
+                    loadFromFile(event.target.files[0]);
+                });
+            </script>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="aes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
