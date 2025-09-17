@@ -1,4 +1,4 @@
-const CACHE_NAME = "sw-cache-daglezja-mobile-v7";
+const CACHE_NAME = "sw-cache-daglezja-mobile-v8";
 const PATHS_TO_CACHE = [
 
   "/web-apps/daglezja-mobile/",
